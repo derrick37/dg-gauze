@@ -13,8 +13,8 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #e3f2fd; /* lighter bright blue */
-      color: #0d47a1; /* strong blue */
+      background: #e3f2fd; /* light blue background */
+      color: #0d47a1; /* deep blue text */
       line-height: 1.6;
       padding: 25px;
       display: flex;
@@ -29,7 +29,7 @@
 
     /* Header */
     header {
-      background: #1976d2; /* brighter blue */
+      background: #1976d2; /* bright blue */
       color: white;
       padding: 25px;
       text-align: center;
@@ -37,7 +37,7 @@
       font-weight: 700;
       border-radius: 10px;
       margin-bottom: 35px;
-      box-shadow: 0 4px 10px rgba(25, 118, 210, 0.5);
+      /* Removed glow */
     }
 
     /* Products Section */
@@ -51,32 +51,31 @@
     .product-card {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(25, 118, 210, 0.15);
       padding: 20px;
       width: 480px;
       display: flex;
       gap: 25px;
-      border: 2px solid #64b5f6; /* lighter bright blue border */
+      border: 2px solid #4caf50; /* green border */
       align-items: center;
-      transition: box-shadow 0.3s ease;
+      transition: border-color 0.3s ease;
     }
     .product-card:hover {
-      box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
+      border-color: #1976d2; /* blue on hover */
     }
     .product-image img {
       width: 180px;
       height: 180px;
       object-fit: contain;
       border-radius: 10px;
-      border: 2px solid #bbdefb;
-      background: #eaf4ff;
+      border: 2px solid #a5d6a7; /* light green */
+      background: #e8f5e9; /* very light green background */
       padding: 5px;
     }
     .product-info {
       flex: 1;
     }
     .product-info h2 {
-      color: #1565c0; /* bright blue */
+      color: #2e7d32; /* darker green */
       font-size: 1.5em;
       margin-bottom: 8px;
       font-weight: 700;
@@ -100,18 +99,18 @@
     .info-sections {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(25, 118, 210, 0.15);
       padding: 25px 30px;
       max-width: 1100px;
       margin: 0 auto 40px;
       color: #0d47a1;
-      border: 2px solid #64b5f6;
+      border: 2px solid #4caf50; /* green border */
     }
     .info-sections h3 {
       text-align: center;
       margin-bottom: 20px;
       font-size: 1.6em;
       font-weight: 700;
+      color: #2e7d32; /* green heading */
     }
     .payment-options {
       display: flex;
@@ -129,11 +128,11 @@
       width: 70px;
       height: auto;
       border-radius: 8px;
-      border: 2px solid #64b5f6;
+      border: 2px solid #4caf50; /* green border */
       background: white;
       padding: 6px;
       flex-shrink: 0;
-      filter: drop-shadow(0 1px 1px rgba(25, 118, 210, 0.2));
+      /* Removed glow */
     }
     .payment-text p {
       margin-bottom: 7px;
@@ -142,7 +141,7 @@
     }
     .payment-text p span {
       font-weight: 700;
-      color: #1565c0;
+      color: #2e7d32; /* green */
     }
 
     /* Footer */
@@ -153,12 +152,13 @@
       border-radius: 10px;
       text-align: center;
       font-size: 1em;
-      box-shadow: 0 -4px 12px rgba(25, 118, 210, 0.6);
       margin-top: auto;
+      /* Removed glow */
     }
     footer h3 {
       margin-bottom: 15px;
       font-weight: 700;
+      color: #a5d6a7; /* light green */
     }
     footer p {
       margin: 6px 0;
@@ -254,22 +254,12 @@
         </div>
 
         <div class="payment-option">
-          <div style="width: 70px; height: 70px; border-radius: 8px; background: #2196f3; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2em; user-select: none; box-shadow: 0 2px 6px rgba(33, 150, 243, 0.4);">
+          <div style="width: 70px; height: 70px; border-radius: 8px; background: #4caf50; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2em; user-select: none;">
             Bank
           </div>
           <div class="payment-text">
             <p><span>Cooperative Bank Account:</span></p>
             <p><span>Account No.:</span> 07000</p>
-          </div>
-        </div>
-
-        <div class="payment-option">
-          <div style="width: 70px; height: 70px; border-radius: 8px; background: #f44336; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2em; user-select: none; box-shadow: 0 2px 6px rgba(244, 67, 54, 0.4);">
-            Airtel
-          </div>
-          <div class="payment-text">
-            <p><span>Airtel Money Paybill:</span> 6708</p>
-            <p><span>Account No.:</span> 5423</p>
           </div>
         </div>
       </div>
