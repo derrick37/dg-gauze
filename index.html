@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DG Medical Gauze</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DG Medical Supplies</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>DG Medical Supplies</h1>
-    <p>Trusted Medical Products</p>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="promo">Free Delivery above 10‑piece orders</div>
+      <div class="contact-info">
+        Call us: <a href="tel:+254720563125">+254 720 563 125</a> | <a href="mailto:dg@gmail.com">dg@gmail.com</a>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <h1 class="logo">DG Medical Supplies</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="images-row">
-    <img src="background.jpg" alt="Gauze Image 1" />
-    <img src="background2.jpg" alt="Gauze Image 2" />
+  <section class="hero">
+    <div class="hero-items">
+      <div class="hero-item">
+        <img src="background.jpg" alt="Medical Product">
+        <div class="hero-text">Trusted Medical Gauze & Supplies</div>
+      </div>
+      <div class="hero-item">
+        <img src="background2.jpg" alt="Medical Supplies">
+        <div class="hero-text">Quality You Can Rely On</div>
+      </div>
+    </div>
   </section>
 
-  <section class="products-section">
-    <div class="product">
-      <img src="gauze.jpg" alt="Sterile Gauze" class="product-img" />
-      <div class="product-info">
+  <section class="products-list">
+    <div class="product-card">
+      <img src="gauze.jpg" alt="Sterile Gauze">
+      <div class="product-details">
         <h2>Sterile Medical Gauze (10" x 10")</h2>
-        <p class="price">Price: <strong>600 KES</strong></p>
+        <p class="price">600 KES</p>
         <ul>
-          <li>Size: 10 inch x 10 inch</li>
           <li>Strand: 40s</li>
-          <li>Mesh: 19x10</li>
-          <li>Color: White</li>
-          <li>Material: 100% Cotton</li>
+          <li>Mesh: 19×10</li>
+          <li>100% Cotton, White</li>
           <li>Sterile: Yes</li>
         </ul>
       </div>
     </div>
 
-    <div class="product">
-      <img src="gauze2.jpg" alt="Non-Sterile Gauze" class="product-img" />
-      <div class="product-info">
-        <h2>Medical Gauze Swabs – Non-Sterile (10" x 10")</h2>
-        <p class="price">Price: <strong>600 KES</strong></p>
+    <div class="product-card">
+      <img src="gauze2.jpg" alt="Non‑Sterile Gauze">
+      <div class="product-details">
+        <h2>Non‑Sterile Gauze (10" x 10")</h2>
+        <p class="price">600 KES</p>
         <ul>
-          <li>Size: 10 inch x 10 inch</li>
           <li>Strand: 4S</li>
-          <li>Mesh: 19x15</li>
-          <li>Ply: 4-ply</li>
-          <li>Color: White</li>
-          <li>Material: 100% Cotton</li>
+          <li>Mesh: 19×15</li>
+          <li>4‑Ply, 100% Cotton, White</li>
           <li>Sterile: No</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="info-section">
-    <div class="contact">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:dg@gmail.com">dg@gmail.com</a></p>
-      <p>Phone: <a href="tel:+254720563125">+254 720 563 125</a></p>
-      <p>Address: Forest View Lane, Karen, Nairobi</p>
+  <section class="newsletter">
+    <div class="container">
+      <h3>Sign Up & Save</h3>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
+  </section>
 
-    <div class="mpesa">
-      <h3>Pay with M-Pesa</h3>
-      <img src="mpesa.jpg" alt="M-Pesa Logo" />
+  <section class="info-sections">
+    <div class="info-box contact-box">
+      <h3>Contact Us</h3>
+      <p>Forest View Lane, Karen, Nairobi</p>
+      <p>Phone: <a href="tel:+254720563125">+254 720 563 125</a></p>
+      <p>Email: <a href="mailto:dg@gmail.com">dg@gmail.com</a></p>
+    </div>
+    <div class="info-box payment-box">
+      <h3>Pay with M‑Pesa</h3>
+      <img src="mpesa.jpg" alt="M‑Pesa Logo">
       <p><strong>Paybill:</strong> 57043</p>
       <p><strong>Account No.:</strong> 34552</p>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 DG Medical Supplies</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DG Medical Supplies. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
   </footer>
 
 </body>
