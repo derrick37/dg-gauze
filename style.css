@@ -9,6 +9,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Layout Container */
@@ -36,28 +37,19 @@ header h1 {
     color: #c8f2ec;
 }
 
-/* Banner Section with Background Image */
-.banner-image {
-    background-image: url('c46eada6-43d6-414f-b728-ab2b65208c83.png');
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    position: relative;
-}
-
-.banner-image .overlay {
-    background-color: rgba(0, 150, 136, 0.7); /* M-Pesa green tint */
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+/* Hero Image */
+.hero-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.banner-image h2 {
-    font-size: 2em;
-    padding: 0 20px;
+.responsive-hero {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Product Section */
@@ -105,7 +97,7 @@ ul {
     list-style: disc;
 }
 
-/* Contact + M-Pesa Section */
+/* Info Section (Contact + M-Pesa) */
 .info-section {
     margin: 30px 0;
 }
@@ -136,7 +128,7 @@ ul {
     text-decoration: none;
 }
 
-/* M-Pesa Payment Section */
+/* M-Pesa Payment */
 .payment {
     background-color: #e8f5e9;
     padding: 25px;
