@@ -99,6 +99,42 @@ ul {
     text-decoration: none;
 }
 
+/* M-Pesa Payment Section */
+.payment {
+    background-color: #e8f5e9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.payment h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.payment-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mpesa-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 5px;
+}
+
+.payment-details {
+    font-size: 1em;
+    color: #2e7d32;
+}
+
+/* Footer */
 footer {
     background-color: #004d40;
     color: white;
