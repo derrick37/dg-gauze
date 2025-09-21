@@ -1,179 +1,128 @@
-/* Base Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f8ff;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
   color: #333;
-  line-height: 1.5;
-  overflow-x: hidden; /* Allow vertical scrolling */
-}
-
-/* Utility Container */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 15px;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
   background-color: #009688;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 10px;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
-.tagline {
-  font-size: 1.1em;
-  color: #c8f2ec;
+header p {
+  font-size: 1em;
+  margin-top: 5px;
 }
 
-/* Dual Images Section */
-.dual-images {
+/* Images Row */
+.images-row {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 
-.half {
-  width: 50%;
-  overflow: hidden;
-}
-
-.half img {
+.images-row img {
   width: 100%;
+  max-width: 480px;
   height: auto;
-  display: block;
-  object-fit: contain;
+  border-radius: 6px;
+  object-fit: cover;
+  flex: 1;
 }
 
 /* Product Section */
 .product {
-  background-color: #ffffff;
-  margin: 30px 0;
-  padding: 25px 20px;
-  border-left: 6px solid #009688;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-.product-image {
-  flex: 1 1 250px;
-}
-
-.product-image img {
-  max-width: 100%;
-  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: white;
   border-radius: 8px;
-  border: 2px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.product-details {
-  flex: 2 1 300px;
+.product-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
 }
 
-.product h2 {
+.product-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.product-info h2 {
   color: #00796b;
   margin-bottom: 10px;
-  font-size: 1.5em;
 }
 
 .price {
   color: #e91e63;
-  font-size: 1.3em;
-  margin: 10px 0;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-ul {
+.product-info ul {
+  list-style-type: disc;
   margin-left: 20px;
-  list-style: disc;
-  font-size: 1em;
 }
 
-/* Contact & M-Pesa Section */
+/* Contact & M-Pesa */
 .info-section {
-  margin: 30px 0;
-}
-
-.info-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-/* Contact */
-.contact,
-.payment {
-  flex: 1 1 300px;
+  margin: 30px auto;
   padding: 20px;
+  max-width: 900px;
+}
+
+.contact,
+.mpesa {
+  flex: 1 1 300px;
+  background-color: #ffffff;
+  padding: 15px 20px;
   border-radius: 8px;
-  font-size: 0.95em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.contact {
-  background-color: #e0f2f1;
-}
-
-.contact h3 {
-  color: #00796b;
+.contact h3,
+.mpesa h3 {
+  color: #009688;
   margin-bottom: 10px;
-  font-size: 1.2em;
 }
 
 .contact a {
-  color: #009688;
+  color: #00796b;
   text-decoration: none;
 }
 
-/* M-Pesa */
-.payment {
-  background-color: #e8f5e9;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.payment h3 {
-  color: #2e7d32;
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-
-.payment-box {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.mpesa-logo {
-  width: 80px;
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
-  padding: 5px;
-}
-
-.payment-details {
-  font-size: 1em;
-  color: #2e7d32;
+.mpesa img {
+  width: 100px;
+  margin: 10px 0;
+  display: block;
 }
 
 /* Footer */
@@ -181,7 +130,6 @@ footer {
   background-color: #004d40;
   color: white;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px;
   font-size: 0.9em;
-  margin-top: 40px;
 }
