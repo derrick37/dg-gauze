@@ -1,110 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DG Medical Supplies</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #e8f0fe; /* very light blue */
+      color: #1a237e; /* dark blue */
+      line-height: 1.5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      background: #0d47a1; /* strong blue */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 8px rgba(13,71,161,0.4);
+    }
+
+    /* Products Section */
+    .products-list {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(13,71,161,0.15);
+      padding: 20px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: 1px solid #bbdefb; /* subtle blue border */
+    }
+    .product-card h2 {
+      color: #0d47a1;
+      font-size: 1.3em;
+    }
+    .product-card .price {
+      color: #1565c0; /* medium blue */
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .product-card ul {
+      list-style: disc inside;
+      font-size: 0.95em;
+      color: #3949ab; /* bluish text */
+    }
+
+    /* Info Sections */
+    .info-sections {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .info-box {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(13,71,161,0.15);
+      padding: 20px;
+      width: 320px;
+      font-size: 1em;
+      color: #1a237e;
+      border: 1px solid #bbdefb;
+    }
+    .info-box h3 {
+      margin-bottom: 10px;
+      color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #0d47a1;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .products-list, .info-sections {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-card, .info-box {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="top-bar">
-      <div class="promo">Free Delivery above 10‑piece orders</div>
-      <div class="contact-info">
-        Call us: <a href="tel:+254720563125">+254 720 563 125</a> | <a href="mailto:dg@gmail.com">dg@gmail.com</a>
-      </div>
-    </div>
-    <div class="nav-bar">
-      <h1 class="logo">DG Medical Supplies</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-items">
-      <div class="hero-item">
-        <img src="background.jpg" alt="Medical Product">
-        <div class="hero-text">Trusted Medical Gauze & Supplies</div>
-      </div>
-      <div class="hero-item">
-        <img src="background2.jpg" alt="Medical Supplies">
-        <div class="hero-text">Quality You Can Rely On</div>
-      </div>
-    </div>
-  </section>
+  <header>DG Medical Supplies</header>
 
   <section class="products-list">
-    <div class="product-card">
-      <img src="gauze.jpg" alt="Sterile Gauze">
-      <div class="product-details">
-        <h2>Sterile Medical Gauze (10" x 10")</h2>
-        <p class="price">600 KES</p>
-        <ul>
-          <li>Strand: 40s</li>
-          <li>Mesh: 19×10</li>
-          <li>100% Cotton, White</li>
-          <li>Sterile: Yes</li>
-        </ul>
-      </div>
-    </div>
+    <article class="product-card">
+      <h2>Sterile Medical Gauze (10" x 10")</h2>
+      <p class="price">600 KES</p>
+      <ul>
+        <li>Strand: 40s</li>
+        <li>Mesh: 19×10</li>
+        <li>100% Cotton, White</li>
+        <li>Sterile: Yes</li>
+      </ul>
+    </article>
 
-    <div class="product-card">
-      <img src="gauze2.jpg" alt="Non‑Sterile Gauze">
-      <div class="product-details">
-        <h2>Non‑Sterile Gauze (10" x 10")</h2>
-        <p class="price">600 KES</p>
-        <ul>
-          <li>Strand: 4S</li>
-          <li>Mesh: 19×15</li>
-          <li>4‑Ply, 100% Cotton, White</li>
-          <li>Sterile: No</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <div class="container">
-      <h3>Sign Up & Save</h3>
-      <form>
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+    <article class="product-card">
+      <h2>Non‑Sterile Gauze (10" x 10")</h2>
+      <p class="price">600 KES</p>
+      <ul>
+        <li>Strand: 4S</li>
+        <li>Mesh: 19×15</li>
+        <li>4-Ply, 100% Cotton, White</li>
+        <li>Sterile: No</li>
+      </ul>
+    </article>
   </section>
 
   <section class="info-sections">
-    <div class="info-box contact-box">
+    <div class="info-box">
       <h3>Contact Us</h3>
-      <p>Forest View Lane, Karen, Nairobi</p>
-      <p>Phone: <a href="tel:+254720563125">+254 720 563 125</a></p>
-      <p>Email: <a href="mailto:dg@gmail.com">dg@gmail.com</a></p>
+      <p>Forest View Lane, Karen, Nairobi, Kenya</p>
+      <p>Phone: +254 720 563 125</p>
+      <p>Email: dg@gmail.com</p>
     </div>
-    <div class="info-box payment-box">
-      <h3>Pay with M‑Pesa</h3>
-      <img src="mpesa.jpg" alt="M‑Pesa Logo">
+
+    <div class="info-box">
+      <h3>Pay with M-Pesa</h3>
       <p><strong>Paybill:</strong> 57043</p>
       <p><strong>Account No.:</strong> 34552</p>
+      <p>Use the above details in your M-Pesa app to complete payment.</p>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 DG Medical Supplies. All Rights Reserved.</p>
-      <ul class="footer-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Shipping Policy</a></li>
-        <li><a href="#">Returns</a></li>
-      </ul>
-    </div>
+  <footer>
+    &copy; 2025 DG Medical Supplies. All rights reserved.
   </footer>
 
 </body>
