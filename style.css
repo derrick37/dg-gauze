@@ -29,7 +29,7 @@ header p {
   margin-top: 5px;
 }
 
-/* Images Row */
+/* Dual Images Section */
 .images-row {
   display: flex;
   flex-wrap: wrap;
@@ -48,45 +48,51 @@ header p {
   flex: 1;
 }
 
-/* Product Section */
-.product {
+/* Products Section - side by side */
+.products-section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 20px auto;
+  justify-content: center;
   padding: 20px;
-  max-width: 900px;
-  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Product */
+.product {
+  flex: 1 1 350px;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  max-width: 500px;
 }
 
 .product-img {
   width: 100%;
-  max-width: 300px;
+  height: auto;
   border-radius: 6px;
   border: 1px solid #ddd;
-}
-
-.product-info {
-  flex: 1;
-  min-width: 250px;
+  margin-bottom: 15px;
 }
 
 .product-info h2 {
   color: #00796b;
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .price {
   color: #e91e63;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 10px;
 }
 
 .product-info ul {
   list-style-type: disc;
   margin-left: 20px;
+  font-size: 0.95em;
 }
 
 /* Contact & M-Pesa */
@@ -96,7 +102,7 @@ header p {
   gap: 20px;
   margin: 30px auto;
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .contact,
@@ -132,4 +138,17 @@ footer {
   text-align: center;
   padding: 12px;
   font-size: 0.9em;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section {
+    flex-direction: column;
+  }
 }
