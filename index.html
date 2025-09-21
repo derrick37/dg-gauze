@@ -30,27 +30,13 @@
       font-weight: 700;
     }
 
-    /* Hero / Background Section */
+    /* Hero Section (background image without overlay) */
     .hero-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background: url('background.jpg') no-repeat center center;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #f5f5f5; /* fallback background */
       height: 400px;
-      position: relative;
-      color: white;
-      text-align: center;
-    }
-
-    .hero-text {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px 30px;
-      border-radius: 12px;
-      font-size: 2em;
-      font-weight: 700;
-      position: relative;
-      z-index: 2;
     }
 
     /* Products Section */
@@ -187,13 +173,13 @@
     }
 
     @media (max-width: 480px) {
-      .hero-text {
-        font-size: 1.3em;
-        padding: 15px;
+      .hero-section {
+        height: 250px;
+        background-size: contain;
       }
 
-      .payment-logos img,
-      .logo-text {
+      .logo-text,
+      .payment-logos img {
         height: 40px;
         width: 70px;
         font-size: 0.8em;
@@ -206,10 +192,8 @@
   <!-- Header -->
   <header>DG Medical Supplies</header>
 
-  <!-- Hero Section with Background -->
-  <section class="hero-section">
-    <div class="hero-text">Committed to your health</div>
-  </section>
+  <!-- Hero Section with Zoomed Out Image -->
+  <section class="hero-section"></section>
 
   <!-- Products Section -->
   <section class="products-section">
